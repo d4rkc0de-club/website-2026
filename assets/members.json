@@ -1,0 +1,225 @@
+{
+  "members": [
+    {
+      "name": "Manish",
+      "role": "Junior",
+      "skills": ["Cryptography"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "Prowler_gg",
+      "role": "Junior",
+      "skills": ["Reverse Engineering"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "Pr4njal",
+      "role": "Sophomore",
+      "skills": ["Design"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+        }
+    },
+    {
+      "name": "bas64",
+      "role": "Junior",
+      "skills": [],
+      "bio": "Does nothing.",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "Berserk",
+      "role": "Senior",
+      "skills": [],
+      "bio": "idk",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "c0d3Astra",
+      "role": "Senior",
+      "skills": ["Web"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "Cloud",
+      "role": "Sophomore",
+      "skills": ["OSINT", "Web", "Forensics"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "darsh",
+      "role": "Junior",
+      "skills": ["Web", "Misc", "Forensics"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "EpSilON",
+      "role": "Senior",
+      "skills": [],
+      "bio": "idk",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "froggy",
+      "role": "Senior",
+      "skills": [],
+      "bio": "idk",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "gs",
+      "role": "Senior",
+      "skills": [],
+      "bio": "idk",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "JAAT",
+      "role": "Junior",
+      "skills": ["OSINT", "Forensics", "Reverse Engineering"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "Krypton",
+      "role": "Junior",
+      "skills": ["Cryptography", "Misc"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "p41nt",
+      "role": "Junior",
+      "skills": ["Reverse Engineering", "Pwn"],
+      "bio": "",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+      "name": "sage",
+      "role": "Sophomore",
+      "skills": [],
+      "bio": "We'll see.",
+      "image": "",
+      "socials": {
+        "github": "",
+        "linkedin": "",
+        "twitter": "",
+        "website": ""
+      }
+    },
+    {
+    "name": "siliwho",
+    "role": "Senior",
+    "skills": [],
+    "bio": "idk",
+    "image": "",
+    "socials": {
+      "github": "",
+      "linkedin": "",
+      "twitter": "",
+      "website": ""
+    }
+    },
+    {
+    "name": "Sparkfeast",
+    "role": "Senior",
+    "skills": [],
+    "bio": "idk",
+    "image": "",
+    "socials": {
+      "github": "",
+      "linkedin": "",
+      "twitter": "",
+      "website": ""
+    }
+    }
+  ]
+}
