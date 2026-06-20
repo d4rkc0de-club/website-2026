@@ -42,21 +42,8 @@
     {
       "name": "bas64",
       "role": "Junior",
-      "skills": [],
+      "skills": ["Comp Prog"],
       "bio": "Does nothing.",
-      "image": "",
-      "socials": {
-        "github": "",
-        "linkedin": "",
-        "twitter": "",
-        "website": ""
-      }
-    },
-    {
-      "name": "Berserk",
-      "role": "Senior",
-      "skills": [],
-      "bio": "idk",
       "image": "",
       "socials": {
         "github": "",
@@ -131,19 +118,6 @@
       }
     },
     {
-      "name": "gs",
-      "role": "Senior",
-      "skills": [],
-      "bio": "idk",
-      "image": "",
-      "socials": {
-        "github": "",
-        "linkedin": "",
-        "twitter": "",
-        "website": ""
-      }
-    },
-    {
       "name": "JAAT",
       "role": "Junior",
       "skills": ["OSINT", "Forensics", "Reverse Engineering"],
@@ -194,19 +168,6 @@
         "twitter": "",
         "website": ""
       }
-    },
-    {
-    "name": "siliwho",
-    "role": "Senior",
-    "skills": [],
-    "bio": "idk",
-    "image": "",
-    "socials": {
-      "github": "",
-      "linkedin": "",
-      "twitter": "",
-      "website": ""
-    }
     }
   ]
 }
