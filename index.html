@@ -4,107 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" href="assets/favicon.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-
   <title>d4rkc0de</title>
-
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    
+    * {box-sizing: border-box;margin: 0;padding: 0;}
 
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #050505;
-      color: #eaeaea;
-      font-family: "DotGothic16", sans-serif;
-    }
+    body {min-height: 100vh;display: flex;align-items: center;justify-content: center;background: #050505;color: #eaeaea;font-family: "DotGothic16", sans-serif;}
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
+    body::before { content: ""; position: fixed; inset: 0;
       background:
         linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 30px 30px;
-      pointer-events: none;
+      background-size: 30px 30px; pointer-events: none;
     }
 
-    main {
-      width: min(90%, 700px);
-      padding: 50px 30px;
-      text-align: center;
-      background: rgba(8, 8, 8, 0.9);
-      box-shadow: 0 0 50px rgba(255, 255, 255, 0.03);
-    }
+    main {width: min(90%, 700px);padding: 50px 30px;text-align: center;background: rgba(8, 8, 8, 0.9);box-shadow: 0 0 50px rgba(255, 255, 255, 0.03);}
 
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 12px;
-    }
+    h1 {font-size: 1.5rem;margin-bottom: 12px;}
 
-    p {
-      color: #777;
-      margin-bottom: 30px;
-      line-height: 1.6;
-    }
+    p {color: #777;margin-bottom: 30px;line-height: 1.6;}
 
-    .discord {
-      display: inline-block;
-      padding: 12px 22px;
-      border: 1px solid #444;
-      color: #fff;
-      text-decoration: none;
-      transition: 0.2s ease;
-    }
+    .discord {display: inline-block;padding: 12px 22px;border: 1px solid #444;color: #fff;text-decoration: none;transition: 0.2s ease;}
 
-    .discord:hover {
-      background: #fff;
-      color: #000;
-      border-color: #fff;
-    }
+    .discord:hover {background: #fff;color: #000;border-color: #fff;}
 
-    .qr {
-      margin-top: 30px;
-    }
+    .qr {margin-top: 30px;}
 
-    .qr img {
-      width: 180px;
-      height: 180px;
-      object-fit: contain;
-      border: 1px solid #222;
-      padding: 8px;
-      background: #fff;
-    }
+    .qr img {width: 250px;height: 250px;object-fit: contain;border: 1px solid #222;padding: 8px;background: #fff;}
 
-    .qr small {
-      display: block;
-      margin-top: 10px;
-      color: #555;
-    }
+    .qr small {display: block;margin-top: 10px;color: #555;}
+
     footer { margin-top: 15px; color: #333; font-size: 11px; }
+
   </style>
 </head>
-
 <body>
   <main>
     <h1>Hello there!</h1>
-
     <p>
       Our site is currently under development.<br>
       In the meantime, connect with us on Discord.
     </p>
-
     <a
       class="discord"
       href="https://discord.gg/v6jEASu7Rx"
@@ -113,7 +57,6 @@
     >
       &gt; Join the Discord
     </a>
-
     <div class="qr">
       <img src="/assets/discord-qr.png" alt="Discord QR Code">
       <small>scan to join</small>
