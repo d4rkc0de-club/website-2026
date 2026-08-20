@@ -1,33 +1,124 @@
+<!-- this is temporary till the actual site is actually developed -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>d4rkc0de</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="assets/favicon.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+  <title>d4rkc0de</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #050505;
+      color: #eaeaea;
+      font-family: "DotGothic16", sans-serif;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 30px 30px;
+      pointer-events: none;
+    }
+
+    main {
+      width: min(90%, 700px);
+      padding: 50px 30px;
+      text-align: center;
+      background: rgba(8, 8, 8, 0.9);
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.03);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #777;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .discord {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid #444;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .discord:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    .qr {
+      margin-top: 30px;
+    }
+
+    .qr img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      border: 1px solid #222;
+      padding: 8px;
+      background: #fff;
+    }
+
+    .qr small {
+      display: block;
+      margin-top: 10px;
+      color: #555;
+    }
+    footer { margin-top: 15px; color: #333; font-size: 11px; }
+  </style>
 </head>
+
 <body>
-    <header>
-        <a href="./"><div id="logo-main">d<span style='color:#119944'>4</span>rkc<span style='color:#119944'>0</span>de</div></a>
-        <div id="header-options">
-            <a href="./about.html"><p class="clickable-text"  class="selected">AB0UT</p></a>
-            <a href="./members.html"><p class="clickable-text">MEMBERS</p></a>
-            <a href="./contact.html"><p class="clickable-text">C0NTACT</p></a>
-        </div>
-        <div id="join-button">join</div>
-    </header>
-    <main>
-        <div id="main-text-index">
-            <p style="color:#119944; font-size: 1.5rem;">root@d4rkc0de:~#</p>
-            <p style="color: #fafafa; font-size: 1.75rem;">a single vulnerability is all it takes</p>
-            <!-- add something better if you want ^^^ -->
-        </div>
-        <!-- <img src="./asciinator_9Jun_001 (1).png" alt="pixel_background" style="width: 100vw;"> -->
-    </main>
-    <footer>
-        <div>d4rkc0de</div>
-        <div style="margin: auto;">&#169; 2026 &bull; IIIT Delhi</div>
-        <div>&lt;time&gt; // 0x00</div>
-    </footer>
+  <main>
+    <h1>Hello there!</h1>
+
+    <p>
+      Our site is currently under development.<br>
+      In the meantime, connect with us on Discord.
+    </p>
+
+    <a
+      class="discord"
+      href="https://discord.gg/v6jEASu7Rx"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      &gt; Join the Discord
+    </a>
+
+    <div class="qr">
+      <img src="/assets/discord-qr.png" alt="Discord QR Code">
+      <small>scan to join</small>
+    </div>
+    <footer> d4rkc0de // IIIT Delhi </footer>
+  </main>
 </body>
 </html>
