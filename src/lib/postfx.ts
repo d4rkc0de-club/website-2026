@@ -52,18 +52,18 @@ export const FX_LABELS: Record<FxKey, string> = {
 
 export const FX_DEFAULTS: Record<FxKey, number> = {
   vignette: 50,
-  scanlines: 50,
-  crt: 50,
+  scanlines: 60,
+  crt: 100,
   chromatic: 50,
-  bloom: 60,
-  charbloom: 60,
-  filmgrain: 40,
-  glitch: 50,
-  rgbsplit: 50,
-  blur: 30,
+  bloom: 100,
+  charbloom: 70,
+  filmgrain: 100,
+  glitch: 15,
+  rgbsplit: 20,
+  blur: 0,
   halftone: 50,
   pixelate: 40,
-  filmdust: 40,
+  filmdust: 35,
   coloroverlay: 30,
 };
 

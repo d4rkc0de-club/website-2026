@@ -29,7 +29,14 @@ function initialState(): FxState {
   for (const k of FX_ORDER) s[k] = { on: false, val: FX_DEFAULTS[k] };
   s.vignette.on = true;
   s.scanlines.on = true;
+  s.crt.on = true;
+  s.bloom.on = true;
   s.charbloom.on = true;
+  s.filmgrain.on = true;
+  s.glitch.on = true;
+  s.rgbsplit.on = true;
+  s.blur.on = true;
+  s.filmdust.on = true;
   return s;
 }
 
@@ -99,7 +106,7 @@ function buildSource(
 
 export default function HeroFx() {
   const [state, setState] = useState<FxState>(initialState);
-  const [asciiOn, setAsciiOn] = useState(true);
+  const [asciiOn, setAsciiOn] = useState(false);
   const stateRef = useRef<FxState>(state);
   const asciiRef = useRef(asciiOn);
   const boxRef = useRef<HTMLDivElement>(null);
