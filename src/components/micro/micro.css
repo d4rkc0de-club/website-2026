@@ -1,0 +1,147 @@
+@keyframes micro-glitch-slice {
+  0% { clip-path: inset(0 0 85% 0); transform: translate(-3px, 0); }
+  20% { clip-path: inset(40% 0 40% 0); transform: translate(3px, 0); }
+  40% { clip-path: inset(70% 0 10% 0); transform: translate(-2px, 0); }
+  60% { clip-path: inset(10% 0 70% 0); transform: translate(2px, 0); }
+  80% { clip-path: inset(55% 0 25% 0); transform: translate(-3px, 0); }
+  100% { clip-path: inset(25% 0 55% 0); transform: translate(3px, 0); }
+}
+
+@keyframes micro-ripple-grow {
+  from { transform: scale(0); opacity: 0.6; }
+  to { transform: scale(1); opacity: 0; }
+}
+
+.micro-glitch::before,
+.micro-glitch::after {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.micro-glitch::before {
+  color: var(--color-accent);
+}
+
+.micro-glitch::after {
+  color: var(--color-ice);
+}
+
+.micro-glitch:is(:hover, :focus-visible)::before,
+.micro-glitch:is(:hover, :focus-visible)::after {
+  opacity: 1;
+  animation: micro-glitch-slice 500ms steps(1, end) infinite;
+}
+
+.micro-glitch:is(:hover, :focus-visible)::after {
+  animation-direction: reverse;
+  animation-duration: 650ms;
+}
+
+@keyframes micro-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+.micro-ripple {
+  animation: micro-ripple-grow 600ms ease-out forwards;
+}
+
+.micro-shake {
+  animation: micro-shake 400ms ease-in-out;
+}
+
+.micro-tilt-card {
+  transition: transform 150ms ease-out;
+}
+
+.micro-redact {
+  position: relative;
+  display: inline-block;
+}
+
+.micro-redact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-paper);
+  transform-origin: right;
+  transition: transform 300ms ease;
+}
+
+.micro-redact:is(:hover, :focus)::after {
+  transform: scaleX(0);
+}
+
+.micro-magnetic-button {
+  transition: transform 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.micro-morph-line {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 300ms ease, opacity 200ms ease;
+}
+
+[data-active="true"] .micro-morph-top {
+  transform: translateY(5px) rotate(45deg);
+}
+
+[data-active="true"] .micro-morph-middle {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+[data-active="true"] .micro-morph-bottom {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.micro-draw-stroke {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 350ms ease;
+}
+
+[data-active="true"] .micro-draw-stroke {
+  stroke-dashoffset: 0;
+}
+
+[data-active="true"] .micro-draw-check {
+  transition-delay: 300ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .micro-glitch::before,
+  .micro-glitch::after {
+    display: none;
+  }
+
+  .micro-ripple {
+    animation-duration: 1ms;
+  }
+
+  .micro-shake {
+    animation-duration: 1ms;
+  }
+
+  .micro-magnetic-button,
+  .micro-tilt-card {
+    transform: none !important;
+  }
+
+  .micro-redact::after {
+    transition: none;
+  }
+
+  .micro-morph-line,
+  .micro-draw-stroke {
+    transition: none;
+  }
+}

@@ -1,0 +1,250 @@
+.
+├── AGENTS.md
+├── CLAUDE.md
+├── d4rkc0de-cybersec.zip
+├── eslint.config.mjs
+├── files_to_zip.txt
+├── firewall-rules-changes.zip
+├── keyspace-fill-changes (1).zip
+├── keyspace-fill-changes.zip
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── race-window (1).zip
+├── race-window.zip
+├── README.md
+├── sql-breakout-changes.zip
+├── src
+│   ├── app
+│   │   ├── components
+│   │   │   └── [variant]
+│   │   │       └── page.tsx
+│   │   ├── cybersec
+│   │   │   └── [variant]
+│   │   │       └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── lab
+│   │   │   └── [variant]
+│   │   │       └── page.tsx
+│   │   ├── layout.tsx
+│   │   ├── loaders
+│   │   │   └── [variant]
+│   │   │       └── page.tsx
+│   │   ├── micro
+│   │   │   └── [variant]
+│   │   │       └── page.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── cybersec
+│   │   │   ├── controls
+│   │   │   │   ├── firewallRulesControls.ts
+│   │   │   │   ├── keyspaceFillControls.ts
+│   │   │   │   ├── raceWindowControls.ts
+│   │   │   │   ├── ringClimbControls.ts
+│   │   │   │   ├── sqlBreakoutControls.ts
+│   │   │   │   └── xssControls.ts
+│   │   │   ├── createConfigurableDemo.tsx
+│   │   │   ├── CrossSiteScript.tsx
+│   │   │   ├── cybersecCanvasDrawing.ts
+│   │   │   ├── CybersecParts.tsx
+│   │   │   ├── cybersecVariants.ts
+│   │   │   ├── firewallRulesEvaluation.ts
+│   │   │   ├── firewallRulesLessons.ts
+│   │   │   ├── FirewallRules.tsx
+│   │   │   ├── keyspaceFillLessons.ts
+│   │   │   ├── KeyspaceFill.tsx
+│   │   │   ├── KeyspaceLessonPanel.tsx
+│   │   │   ├── LessonPanel.tsx
+│   │   │   ├── lessonTypes.ts
+│   │   │   ├── RaceWindow.tsx
+│   │   │   ├── RingClimb.tsx
+│   │   │   ├── sqlBreakoutLessons.ts
+│   │   │   ├── sqlBreakoutQuery.ts
+│   │   │   ├── SqlBreakout.tsx
+│   │   │   ├── xssLessons.ts
+│   │   │   └── xssPageAnalysis.ts
+│   │   ├── hero
+│   │   │   ├── DecodeHero.tsx
+│   │   │   ├── DescentHero.tsx
+│   │   │   ├── GlyphCanvas.tsx
+│   │   │   ├── HeroFrame.tsx
+│   │   │   ├── heroVariants.ts
+│   │   │   ├── HexdumpHero.tsx
+│   │   │   ├── HomoglyphHero.tsx
+│   │   │   ├── NestHero.tsx
+│   │   │   ├── PhysicsHero.tsx
+│   │   │   ├── ReconstructHero.tsx
+│   │   │   ├── relic
+│   │   │   │   ├── FaceAccessory.tsx
+│   │   │   │   └── RelicSections.tsx
+│   │   │   ├── RelicHero.tsx
+│   │   │   ├── SectionParts.tsx
+│   │   │   ├── ShatterHero.tsx
+│   │   │   ├── SolidsHero.tsx
+│   │   │   ├── SpecimenHero.tsx
+│   │   │   ├── StrataHero.tsx
+│   │   │   └── SwarmHero.tsx
+│   │   ├── loaders
+│   │   │   ├── asciiRevealLoader.ts
+│   │   │   ├── CounterSwapLoader.tsx
+│   │   │   ├── CrackSplitLoader.tsx
+│   │   │   ├── DomLoaderDemo.tsx
+│   │   │   ├── homoglyphResolveLoader.ts
+│   │   │   ├── loaderControls.ts
+│   │   │   ├── loaderDefinition.ts
+│   │   │   ├── loaderDemos.tsx
+│   │   │   ├── LoaderDemo.tsx
+│   │   │   ├── loaders.css
+│   │   │   ├── LoaderStage.tsx
+│   │   │   ├── loaderVariants.ts
+│   │   │   ├── MonolithLoader.tsx
+│   │   │   ├── overflowLoader.ts
+│   │   │   ├── redactionPeelLoader.ts
+│   │   │   ├── ReplayButton.tsx
+│   │   │   ├── SlabCurtainLoader.tsx
+│   │   │   ├── SliceAssembleLoader.tsx
+│   │   │   └── terminalRevealLoader.ts
+│   │   ├── micro
+│   │   │   ├── CursorPillCard.tsx
+│   │   │   ├── DrawCheckButton.tsx
+│   │   │   ├── GlitchButton.tsx
+│   │   │   ├── HoldButton.tsx
+│   │   │   ├── MagneticButton.tsx
+│   │   │   ├── micro.css
+│   │   │   ├── MicroStage.tsx
+│   │   │   ├── microStyles.ts
+│   │   │   ├── microVariants.ts
+│   │   │   ├── MorphMenuIcon.tsx
+│   │   │   ├── RedactReveal.tsx
+│   │   │   ├── RippleButton.tsx
+│   │   │   ├── RollCounter.tsx
+│   │   │   ├── ScrambleText.tsx
+│   │   │   ├── ShakeInput.tsx
+│   │   │   ├── TiltCard.tsx
+│   │   │   └── useTimedFlag.ts
+│   │   ├── VariantFrame.tsx
+│   │   ├── variants
+│   │   │   ├── AsciiEyesDemo.tsx
+│   │   │   ├── AsciiEyes.tsx
+│   │   │   ├── AsciiRevealCardDemo.tsx
+│   │   │   ├── AsciiRevealCard.tsx
+│   │   │   ├── ComponentFrame.tsx
+│   │   │   ├── componentVariants.ts
+│   │   │   ├── Configurable.tsx
+│   │   │   ├── controls
+│   │   │   │   ├── asciiEyesControls.ts
+│   │   │   │   ├── cursorTrailControls.ts
+│   │   │   │   ├── flagLockControls.ts
+│   │   │   │   ├── hashAvalancheControls.ts
+│   │   │   │   ├── hexXRayControls.ts
+│   │   │   │   ├── overflowStackControls.ts
+│   │   │   │   ├── revealCardControls.ts
+│   │   │   │   ├── shapeCardControls.ts
+│   │   │   │   ├── terminalCardControls.ts
+│   │   │   │   └── wormSpreadControls.ts
+│   │   │   ├── CursorTrailDemo.tsx
+│   │   │   ├── CursorTrail.tsx
+│   │   │   ├── FlagLockDemo.tsx
+│   │   │   ├── FlagLock.tsx
+│   │   │   ├── GlyphStage.tsx
+│   │   │   ├── HashAvalancheDemo.tsx
+│   │   │   ├── HashAvalanche.tsx
+│   │   │   ├── HexXRayDemo.tsx
+│   │   │   ├── HexXRay.tsx
+│   │   │   ├── JacquardLoom.tsx
+│   │   │   ├── OverflowStackDemo.tsx
+│   │   │   ├── OverflowStack.tsx
+│   │   │   ├── PendulumSentence.tsx
+│   │   │   ├── ShadowPuppetType.tsx
+│   │   │   ├── ShapeCardDemo.tsx
+│   │   │   ├── ShapeCard.tsx
+│   │   │   ├── StencilCutter.tsx
+│   │   │   ├── TerminalCardDemo.tsx
+│   │   │   ├── TerminalCard.tsx
+│   │   │   ├── WormSpreadDemo.tsx
+│   │   │   ├── WormSpread.tsx
+│   │   │   └── WovenSentence.tsx
+│   │   └── variantSections.ts
+│   ├── content
+│   │   ├── componentDemoContent.ts
+│   │   ├── cybersecContent.ts
+│   │   ├── eyesImage.ts
+│   │   ├── heroContent.ts
+│   │   ├── loaderContent.ts
+│   │   ├── nestContent.ts
+│   │   ├── relicBustImage.ts
+│   │   ├── relicCampusImage.ts
+│   │   ├── relicContent.ts
+│   │   ├── relicDoorwayImage.ts
+│   │   ├── relicMountainImage.ts
+│   │   └── strataSections.ts
+│   └── lib
+│       ├── ascii
+│       │   ├── blockFont.ts
+│       │   ├── brailleDots.ts
+│       │   ├── cellCursor.ts
+│       │   ├── cellGeometry.ts
+│       │   ├── centerOutRanks.ts
+│       │   ├── corruptionCrawl.ts
+│       │   ├── descentArt.ts
+│       │   ├── descentScenes.ts
+│       │   ├── dotImage.ts
+│       │   ├── drawBlendedGrid.ts
+│       │   ├── drawGlyphCell.ts
+│       │   ├── drawGlyphText.ts
+│       │   ├── drawSceneGrid.ts
+│       │   ├── easing.ts
+│       │   ├── faceAccessories.ts
+│       │   ├── fieldArt.ts
+│       │   ├── glyphFlight.ts
+│       │   ├── glyphImage.ts
+│       │   ├── glyphSets.ts
+│       │   ├── glyphStyle.ts
+│       │   ├── gridMorphParticles.ts
+│       │   ├── homoglyphScene.ts
+│       │   ├── imageSampler.ts
+│       │   ├── keyboardInput.ts
+│       │   ├── loaderProgress.ts
+│       │   ├── luminanceGrids.ts
+│       │   ├── mixHexColors.ts
+│       │   ├── nestScenes.ts
+│       │   ├── nestWasp.ts
+│       │   ├── networkGraph.ts
+│       │   ├── pressTracker.ts
+│       │   ├── relicArt.ts
+│       │   ├── relicScenes.ts
+│       │   ├── sceneGrid.ts
+│       │   ├── sceneText.ts
+│       │   ├── sectionGrids.ts
+│       │   ├── shatterLayout.ts
+│       │   ├── shatterScene.ts
+│       │   ├── stageColors.ts
+│       │   ├── taglineLayout.ts
+│       │   ├── textMask.ts
+│       │   └── types.ts
+│       ├── byteFormat.ts
+│       ├── describeSwitchState.ts
+│       ├── formatIndexLabel.ts
+│       ├── formatQuantity.ts
+│       ├── groupAdjacentByKey.ts
+│       ├── hashBits.ts
+│       ├── threadInterleavings.ts
+│       ├── timeUnits.ts
+│       ├── variantControls.ts
+│       └── variantRegistry.ts
+├── tree.txt
+├── tsconfig.json
+├── tsconfig.tsbuildinfo
+├── Visualisation.md
+└── xss-changes.zip
+
+26 directories, 222 files

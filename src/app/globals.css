@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme static {
+  --color-void: #080808;
+  --color-ink: #0a0a0a;
+  --color-panel: #111111;
+  --color-line: #2a2a2a;
+  --color-mid: #666666;
+  --color-light: #bdbdbd;
+  --color-paper: #f2f2f2;
+  --color-white: #ffffff;
+  --color-sheet: #e6e6e2;
+  --color-accent: #ff3333;
+  --color-wasp: #f2b01e;
+  --color-wasp-mid: #b9850f;
+  --color-wasp-dim: #5c4208;
+  --color-signal: #4ade80;
+  --color-ice: #5ec8ff;
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-archivo-black), var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@keyframes hexdump-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.animate-hexdump-blink {
+  animation: hexdump-blink 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hexdump-blink {
+    animation: none;
+  }
+}
+
+html,
+body {
+  background: var(--color-void);
+  color: var(--color-paper);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-white);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-paper);
+  color: var(--color-void);
+}
